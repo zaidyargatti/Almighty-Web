@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+/* Navbar start */
+        nav{
+            margin: 0%;
+            padding-left: 0%;
+            width: 100%;
+            display: flex;
+            border-bottom: 1px rgb(255, 255, 255) solid ;
+            height: 65px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            position:relative;
+           
+
+        }
+        .nav-ul-left{
+            display: flex;
+            
+        }
+        .nav-ul-right{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 10% ;
+        }
+        .nav-ul-right a{
+            list-style: none;
+            text-decoration: none;
+            margin-left: 5%;
+            color:#007272;
+            
+        }
+        .nav-ul-right a :hover{
+            border-bottom: #007272 solid 2px;
+            color:#00727284;
+        }
+        .nav-ul-searchbar{
+            height: 30px;
+            margin-left: 5%;
+           border: 1px solid #007272  ;
+           border-radius: 10px;
+           padding-left: 10px;
+           color: #042727;
+           outline: none;
+           margin-bottom: 4px;
+        }
+        .nav-logo{
+            height: 7%;
+            width: 7%;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 2%;
+            
+        }
+        .nav-name{
+            width: 100%;
+            font-size: 150%;
+            font-weight: bold;
+            color: #042727;
+        }
+/* Navbar Ends */
+
+/* login start */
+        .big {
+            border-radius: 16px;
+            width: 798px;
+            height: 523px;
+            position: relative;
+            top: 56px;
+            margin: auto;
+            display: flex;
+            box-shadow: 0 0 10px rgba(146, 146, 146, 0.609);
+        }
+
+        .first {
+
+            width: 438px;
+            height: 523px;
+            position: relative;
+
+        }
+
+        h1 {
+            color: #042727;
+            position: relative;
+            left: 104px;
+            width: 55%;
+        }
+
+        .a {
+            font-size: 1.3rem;
+            color: rgb(89, 89, 89);
+            position: relative;
+            left: 178px;
+            bottom: 14px;
+            width: 36%;
+        }
+
+        .short {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 11px;
+            left: 9px;
+        }
+
+        .google {
+            border: 1px solid black;
+            border-radius: 7px;
+            border-color: grey;
+            width: 166px;
+            height: 40px;
+            display: flex;
+            position: relative;
+            left: 138px;
+            bottom: 20px;
+        }
+
+        .b {
+            position: relative;
+            bottom: 2px;
+            left: 16px;
+            font-size: 0.89rem;
+        }
+
+        .c {
+            position: relative;
+            left: 50px;
+            font-size: 0.69rem;
+        }
+
+        .line {
+            display: flex;
+            position: relative;
+            bottom: 15px;
+
+        }
+
+        .s {
+            border: 0.5px solid grey;
+            height: 0px;
+            width: 112px;
+            position: relative;
+            top: 16px;
+            left: 19px;
+        }
+
+        .z {
+            border: 0.5px solid grey;
+            height: 0;
+            width: 105px;
+            position: relative;
+            top: 16px;
+            left: 73px;
+        }
+
+        .logo img {
+            width: 70px;
+            height: 70px;
+
+        }
+
+        .logo {
+            display: flex;
+            width: 70px;
+            margin: auto;
+            position: relative;
+            top: 16px;
+        }
+
+        form {
+            position: relative;
+            left: 21px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            color: #042727;
+            width: 91%;
+            height: 28%;
+            bottom: 8px;
+
+        }
+
+        .mail {
+            width: 390px;
+            height: 40px;
+            border-radius: 7px;
+            outline: none;
+            position: relative;
+            top: 5px;
+            background-color: rgba(141, 134, 134, 0.644);
+            font-size: 1.2rem;
+            border: none;
+            appearance: none;
+        }
+
+        .recovery {
+            color: #042727;
+            text-decoration: none;
+            position: relative;
+            top: 20px;
+            left: 207px;
+
+        }
+
+        .password {
+            position: relative;
+            top: 20px;
+        }
+
+        .key {
+            width: 390px;
+            height: 40px;
+            border-radius: 7px;
+            outline: none;
+            position: relative;
+            top: 25px;
+            background-color: rgba(141, 134, 134, 0.644);
+            font-size: 1.2rem;
+            border: none;
+
+        }
+
+        button {
+            font-weight: bold;
+            position: relative;
+            top: 56px;
+            width: 394px;
+            height: 39px;
+            cursor: pointer;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            background-color: #042727;
+            color: white;
+            opacity: 0.8;
+        }
+
+        button:hover {
+            opacity: 0.4;
+            background-color: #0427277b;
+            transition: 0.1s;
+        }
+
+        .bottom {
+            display: flex;
+            position: relative;
+            top: 62px;
+
+        }
+
+        .x {
+            border: 0.5px solid grey;
+            height: 0px;
+            width: 112px;
+            position: relative;
+            top: 16px;
+            left: 19px;
+        }
+
+        .f {
+            position: relative;
+            left: 83px;
+            font-size: 0.69rem;
+
+        }
+
+        .y {
+            border: 0.5px solid grey;
+            height: 0;
+            width: 105px;
+            position: relative;
+            top: 16px;
+            left: 140px;
+
+        }
+
+        .f .h {
+            text-decoration: none;
+            color: grey;
+        }
+
+        .side {
+            border-radius: 16px 0 0 16px;
+        }
+/* Login Ends */
+/* Footer Starts */
+footer{
+            margin: 0%;
+            padding-left: 0%;
+            
+            margin-top: 15%;
+            margin-bottom: 0%;
+            display: flex;
+            width: 100%;
+            height: 65px;
+           background-color: white;
+            align-items: center;
+            justify-content: space-between;
+           
+            bottom: 0;
+              
+        }
+        .footer-left-ul img{
+            height: 5%;
+            width: 5%;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 2%;
+            border-radius: 25px;
+            
+        }
+        .footer-left-ul{
+            display: flex;
+        }
+        .footer-left-ul .p2{
+            border-left: rgb(0, 0, 0) solid 1px;
+            margin-left: 2% ;
+            padding-left: 2%;
+            color: rgba(0, 0, 0, 0.616);
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .footer-left-ul .p1{
+            color: #042727;
+            font-size: 150%;
+        }
+        .footer-right-ul{
+            display: flex;
+           margin-right: 3%;
+          
+            
+        }
+        .footer-right-ul img{
+            height: 30px;
+            width: 30px;
+           margin-left: 20px;
+           
+        }
+        .footer-right-ul div :hover{
+            transform: scale(1.2);
+            transition: ease 60ms;
+        }
+ /* Footer Ends */       
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-ul-left">
+            <img class="nav-logo" src="images/nav-logo.png" alt="">
+            <p class="nav-name">ALMIGHTY VERSE</p>
+        </ul>
+        <ul class="nav-ul-right">
+            
+            <a href=""><li>HOME</li></a>
+            <a href=""><li>CONTACT</li></a>
+            <a href=""><li>ABOUT</li></a>
+            <a href=""><li>LOGIN/SIGNUP</li></a>
+            <input class="nav-ul-searchbar" type="text" placeholder="SEARCH">
+        </ul>
+    </nav>
+
+    <div class="big">
+        <img src="images/sidez.jpg" alt="" class="side">
+        <div class="first">
+
+            <div class="logo"><img src="images/zlogo.png" alt=""></div>
+            <h1>Almighty Verse</h1>
+            <p class="a">Welcome!</p>
+            <div class="google" id="g_id"><img class="short" src="images/google.png" alt="">
+                <p class="b">Sign in with Google</p>
+            </div>
+            <div class="line">
+                <span class="s"></span>
+                <p class="c">OR LOGIN WITH EMAIL</p>
+                <span class="z"></span>
+            </div>
+            <form action="">
+                <label for="" class="email"> Email Address</label><br>
+                <input type="email" class="mail" placeholder="" size="1.2rem"><br>
+                <label for="" class="password">Password</label> <a href="resetpassword.html" class="recovery">Forget Password?</a><br>
+                <input type="password" class="key"><br>
+                <button>Login</button>
+            </form>
+            <div class="bottom">
+                <span class="x"></span>
+                <p class="f"><a href="signup.html" class="h">OR SIGNUP</a></p>
+                <span class="y"></span>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <ul class="footer-left-ul">
+            <img src="images/nav-logo.png" alt="">
+            <p class="p1">ALMIGHTY VERSE</p>
+            <p class="p2">Copyright © 2023 ALMIGHTY VERSE</p>
+        </ul>
+        <ul class="footer-right-ul">
+            <div><a href=""><img src="images/github.png" alt=""></a></div>
+            <div><a href=""><img src="images/instagram.png" alt=""></a></div>
+            <div><a href=""><img src="images/youtube.png" alt=""></a></div>
+            <div><a href=""><img src="images/twitter.png" alt=""></a></div>
+        </ul>
+        
+    </footer>
+
+
+</body>
+
+</html>
